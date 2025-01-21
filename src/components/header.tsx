@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { Bell, Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Input } from "/components/ui/input"
+import { Button } from "../components/ui/button"
+import { Input } from "../components/ui/input"
 import { ProfileDropdown } from "./profile-dropdown"
 
 export function Header() {
@@ -31,7 +32,7 @@ export function Header() {
 
         <div className="flex items-center gap-4 ml-auto">
           <Button variant="default" size="sm" className="bg-purple-500 hover:bg-purple-600">
-            Upgrade to plus
+            Upgrade to pro
           </Button>
           <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white">
             <Bell className="h-5 w-5" />

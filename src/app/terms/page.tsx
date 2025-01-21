@@ -1,12 +1,12 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
+import { Button } from "../../components/ui/button"
 
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-black">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-white">x.dev</span>
+          <span className="text-2xl font-bold text-white">Azua.dev</span>
         </Link>
       </header>
 
@@ -19,7 +19,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">1. Terms</h2>
             <p className="text-zinc-400">
-              By accessing x.dev, you agree to be bound by these terms of service and agree that you are responsible for
+              By accessing Azua.dev, you agree to be bound by these terms of service and agree that you are responsible for
               compliance with any applicable local laws.
             </p>
 
@@ -30,7 +30,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">3. Disclaimer</h2>
             <p className="text-zinc-400">
-              The materials on x.dev are provided on an 'as is' basis. x.dev makes no warranties, expressed or implied,
+              The materials on x.dev are provided on an &apos;as is&apos; basis. Azua.dev makes no warranties, expressed or implied,
               and hereby disclaims and negates all other warranties including, without limitation, implied warranties or
               conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual
               property or other violation of rights.
@@ -38,13 +38,13 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">4. Limitations</h2>
             <p className="text-zinc-400">
-              In no event shall x.dev or its suppliers be liable for any damages arising out of the use or inability to
-              use the materials on x.dev.
+              In no event shall Azua.dev or its suppliers be liable for any damages arising out of the use or inability to
+              use the materials on Azua.dev.
             </p>
 
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">5. Revisions</h2>
             <p className="text-zinc-400">
-              The materials appearing on x.dev could include technical, typographical, or photographic errors. x.dev
+              The materials appearing on Azua.dev could include technical, typographical, or photographic errors. Azua.dev
               does not warrant that any of the materials on its website are accurate, complete or current.
             </p>
           </div>

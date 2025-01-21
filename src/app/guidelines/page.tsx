@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
 import { Shield, Users, MessageSquare, Heart, XCircle, AlertTriangle } from "lucide-react"
 
 export default function GuidelinesPage() {
@@ -54,7 +55,7 @@ export default function GuidelinesPage() {
                   <ul className="space-y-2 text-zinc-400">
                     <li>• Share meaningful, relevant content</li>
                     <li>• Provide constructive feedback</li>
-                    <li>• Credit others' work appropriately</li>
+                    <li>• Credit others&apos; work appropriately</li>
                     <li>• Keep discussions on-topic and professional</li>
                   </ul>
                 </div>
@@ -89,7 +90,7 @@ export default function GuidelinesPage() {
                     <li>• Violations may result in content removal</li>
                     <li>• Repeated violations lead to temporary suspension</li>
                     <li>• Severe violations result in permanent ban</li>
-                    <li>• All decisions are at moderators' discretion</li>
+                    <li>• All decisions are at moderators&apos; discretion</li>
                   </ul>
                 </div>
               </div>

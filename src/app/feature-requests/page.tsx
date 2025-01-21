@@ -1,15 +1,15 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
-import { Input } from "/components/ui/input"
-import { Textarea } from "/components/ui/textarea"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
+import { Textarea } from "../../components/ui/textarea"
 
 export default function FeatureRequestsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">x.dev</span>
+          <span className="text-2xl font-bold">Azua.dev</span>
         </Link>
         <Button asChild variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
           <Link href="/auth">Join the top 1% devs free forever</Link>
@@ -48,7 +48,7 @@ export default function FeatureRequestsPage() {
             <h3 className="text-lg font-medium mb-2">Integrated Code Editor</h3>
             <p className="text-zinc-400 mb-2">Add a built-in code editor for quick code sharing and collaboration.</p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Votes: 1,234</span>
+              <span className="text-sm text-zinc-500">Votes: 1,300</span>
               <Button variant="outline" size="sm">
                 Vote
               </Button>
@@ -60,7 +60,7 @@ export default function FeatureRequestsPage() {
               Implement an AI system to provide automated code reviews and suggestions.
             </p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Votes: 987</span>
+              <span className="text-sm text-zinc-500">Votes: 600</span>
               <Button variant="outline" size="sm">
                 Vote
               </Button>
@@ -70,7 +70,7 @@ export default function FeatureRequestsPage() {
             <h3 className="text-lg font-medium mb-2">Virtual Coding Bootcamps</h3>
             <p className="text-zinc-400 mb-2">Organize virtual coding bootcamps for intensive learning experiences.</p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-500">Votes: 756</span>
+              <span className="text-sm text-zinc-500">Votes: 450</span>
               <Button variant="outline" size="sm">
                 Vote
               </Button>

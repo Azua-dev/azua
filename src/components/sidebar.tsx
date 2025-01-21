@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import {
@@ -41,9 +42,9 @@ import {
   ClipboardList,
 } from "lucide-react"
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "/components/ui/collapsible"
-import { cn } from "/lib/utils"
+import { Button } from "../components/ui/button"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../components/ui/collapsible"
+import { cn } from "../lib/utils"
 
 interface NavItemProps {
   href: string

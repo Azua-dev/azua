@@ -1,12 +1,12 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
+import { Button } from "../../components/ui/button"
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-black">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-white">x.dev</span>
+          <span className="text-2xl font-bold text-white">Azua.dev</span>
         </Link>
       </header>
 

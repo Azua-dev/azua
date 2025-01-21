@@ -1,22 +1,32 @@
-import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
-import { Search } from "lucide-react"
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+import { Card } from "../../components/ui/card";
+import { Search } from "lucide-react";
 
 export default function DocsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Header */}
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">x.dev</span>
+        <Link href="/" className="flex items-center space-x-2" aria-label="Home">
+          <span className="text-2xl font-bold">Azua.dev</span>
         </Link>
-        <Button asChild variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
-          <Link href="/auth">Join the top 1% devs free forever</Link>
+        <Button
+          asChild
+          variant="outline"
+          className="border-purple-500 text-purple-400 hover:bg-purple-500/10"
+        >
+          <Link href="/auth" aria-label="Join Azua.dev">
+            Join the top 1% devs free forever
+          </Link>
         </Button>
       </header>
 
+      {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-8">Documentation</h1>
+
+        {/* Search Bar */}
         <div className="max-w-xl mx-auto mb-12">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-zinc-400" />
@@ -24,16 +34,20 @@ export default function DocsPage() {
               type="text"
               placeholder="Search documentation..."
               className="w-full pl-10 pr-4 py-2 bg-zinc-900 border border-zinc-800 rounded-md text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              aria-label="Search documentation"
             />
           </div>
         </div>
+
+        {/* Documentation Sections */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* Getting Started */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">Getting Started</h2>
             <ul className="space-y-2">
               <li>
                 <Link href="/docs/introduction" className="text-purple-400 hover:underline">
-                  Introduction to x.dev
+                  Introduction to Azua.dev
                 </Link>
               </li>
               <li>
@@ -48,6 +62,8 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+
+          {/* Core Concepts */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">Core Concepts</h2>
             <ul className="space-y-2">
@@ -68,6 +84,8 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+
+          {/* API Reference */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">API Reference</h2>
             <ul className="space-y-2">
@@ -88,6 +106,8 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+
+          {/* Guides */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">Guides</h2>
             <ul className="space-y-2">
@@ -97,7 +117,6 @@ export default function DocsPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/docs/guides/networking-tips" className="textli>
                 <Link href="/docs/guides/networking-tips" className="text-purple-400 hover:underline">
                   Networking Tips
                 </Link>
@@ -109,6 +128,8 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+
+          {/* Tutorials */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">Tutorials</h2>
             <ul className="space-y-2">
@@ -129,6 +150,8 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+
+          {/* FAQs */}
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">FAQs</h2>
             <ul className="space-y-2">
@@ -151,7 +174,6 @@ export default function DocsPage() {
           </Card>
         </div>
       </main>
-  </div>
-  )
+    </div>
+  );
 }
-

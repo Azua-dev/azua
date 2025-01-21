@@ -1,9 +1,9 @@
 "use client"
 
 import { useParams } from "next/navigation"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
-import { PostCard } from "/components/feed/post-card"
+import { Header } from "../../../components/header"
+import { Sidebar } from "../../../components/sidebar"
+import { PostCard } from "../../../components/post-card"
 
 function generateDiscoverPost(id: number, section: string) {
   const titles = {
