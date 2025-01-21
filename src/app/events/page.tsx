@@ -1,13 +1,13 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
 
 export default function EventsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">x.dev</span>
+          <span className="text-2xl font-bold">Azua.dev</span>
         </Link>
         <Button asChild variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
           <Link href="/auth">Join the top 1% devs free forever</Link>

@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useState } from "react"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
-import { PostCard } from "/components/feed/post-card"
-import { Button } from "/components/ui/button"
-import { Input } from "/components/ui/input"
+import { Header } from "../../components/header"
+import { Sidebar } from "../../components/sidebar"
+import { PostCard } from "../../components/post-card"
+import { Button } from "../../components/ui/button"
+import { Input } from "../../components/ui/input"
 import { Users, Search } from "lucide-react"
 
 function generateFollowingPost(id: number) {

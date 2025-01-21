@@ -1,12 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
-
 import { useState } from "react"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
-import { PostCard } from "/components/feed/post-card"
-import { Button } from "/components/ui/button"
-import { Input } from "/components/ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "/components/ui/select"
+import { Header } from "../../../components/header"
+import { Sidebar } from "../../../components/sidebar"
+import { PostCard } from "../../../components/post-card"
+import { Button } from "../../../components/ui/button"
+import { Input } from "../../../components/ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../../components/ui/select"
 import { Database, Server, Code, TrendingUp } from "lucide-react"
 
 function generateBackendPost(id: number) {

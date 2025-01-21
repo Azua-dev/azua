@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { ArrowLeft, ArrowRight, Facebook, Link2, MessageSquare, Share2, PhoneIcon as WhatsApp, X } from "lucide-react"
 import Image from "next/image"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
+import { Button } from "../../../components/ui/button"
+import { Card } from "../../../components/ui/card"
+import { Header } from "../../../components/header"
+import { Sidebar } from "../../../components/sidebar"
 
 export default function PostPage() {
   return (

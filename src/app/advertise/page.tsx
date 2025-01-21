@@ -1,13 +1,13 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
 
 export default function AdvertisePage() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">x.dev</span>
+          <span className="text-2xl font-bold">Azua.dev</span>
         </Link>
         <Button asChild variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
           <Link href="/auth">Join the top 1% devs free forever</Link>
@@ -15,12 +15,12 @@ export default function AdvertisePage() {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">Advertise on x.dev</h1>
+        <h1 className="text-4xl font-bold mb-8">Advertise on Azua.dev</h1>
         <div className="space-y-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Why Advertise with Us?</h2>
             <p className="text-zinc-400 mb-4">
-              x.dev offers a unique opportunity to reach the top 1% of developers worldwide. Our platform is the go-to
+              Azua.dev offers a unique opportunity to reach the top 1% of developers worldwide. Our platform is the go-to
               destination for elite programmers, tech leaders, and innovators in the software development industry.
             </p>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

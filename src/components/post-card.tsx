@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUp, BookmarkIcon, MessageSquare, Share2 } from "lucide-react"
 import Image from "next/image"
-import { Button } from "/components/ui/button"
+import { Button } from "../components/ui/button"
 
 interface PostCardProps {
   title: string

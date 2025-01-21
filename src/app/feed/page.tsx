@@ -1,10 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
-import { PostCard } from "/components/feed/post-card"
+import { Header } from "../../components/header"
+import { Sidebar } from "../../components/sidebar"
+import { PostCard } from "../../components/post-card"
 
 // Mock data generator
 function generateMockPost(id: number) {
@@ -24,7 +26,7 @@ function generateMockPost(id: number) {
 }
 
 export default function FeedPage() {
-  const [posts, setPosts] = useState<any[]>([])
+  const [posts, setPosts] = useState<unknown[]>([])
   const [page, setPage] = useState(1)
   const [ref, inView] = useInView()
 
@@ -38,11 +40,11 @@ export default function FeedPage() {
     if (inView) {
       loadMorePosts()
     }
-  }, [inView])
+  }, [inView, loadMorePosts])
 
   useEffect(() => {
     loadMorePosts()
-  }, [])
+  }, [loadMorePosts])
 
   return (
     <div className="min-h-screen bg-black">
@@ -52,7 +54,11 @@ export default function FeedPage() {
         <main className="flex-1 p-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {posts.map((post, i) => (
-              <PostCard key={i} {...post} />
+              <PostCard title={""} author={{
+                name: "",
+                avatar: "",
+                username: ""
+              }} publishedAt={""} readTime={""} endorsements={0} comments={0} tags={[]} key={i} {...post} />
             ))}
           </div>
           <div ref={ref} className="h-10" />

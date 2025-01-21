@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
-import { Input } from "/components/ui/input"
-import { Textarea } from "/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "/components/ui/select"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
+import { Textarea } from "../../components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select"
 
 export default function ContactPage() {
   return (
@@ -23,8 +23,8 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
             <p className="text-zinc-400 mb-4">
-              Have a question, suggestion, or just want to say hello? We'd love to hear from you. Fill out the form
-              below, and we'll get back to you as soon as possible.
+              Have a question, suggestion, or just want to say hello? We&apos;d love to hear from you. Fill out the form
+              below, and we&apos;ll get back to you as soon as possible.
             </p>
             <Card className="bg-zinc-900 border-zinc-800 p-6">
               <form className="space-y-4">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 <p className="text-zinc-400">
                   For general inquiries:{" "}
                   <a href="mailto:info@azua.dev" className="text-purple-400 hover:underline">
-                    info@azua.dev
+                    hi@azua.dev
                   </a>
                 </p>
                 <p className="text-zinc-400">
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 </p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://twitter.com/xdev"
+                    href="https://twitter.com/azuadotdev"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300"
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     Twitter
                   </a>
                   <a
-                    href="https://linkedin.com/company/xdev"
+                    href="https://linkedin.com/company/azuadotdev"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300"
@@ -118,7 +118,7 @@ export default function ContactPage() {
                     LinkedIn
                   </a>
                   <a
-                    href="https://github.com/xdev"
+                    href="https://github.com/azua.dev"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300"

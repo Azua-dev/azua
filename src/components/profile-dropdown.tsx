@@ -12,14 +12,14 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "/components/ui/alert-dialog"
+} from "../components/ui/alert-dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "/components/ui/dropdown-menu"
+} from "../components/ui/dropdown-menu"
 import { useState } from "react"
 
 export function ProfileDropdown() {
@@ -68,7 +68,7 @@ export function ProfileDropdown() {
             <DropdownMenuItem asChild className="px-3 py-2 text-sm text-purple-400 focus:bg-zinc-800">
               <Link href="/plus">
                 <Star className="mr-2 h-4 w-4" />
-                Upgrade to plus
+                Upgrade to pro
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">

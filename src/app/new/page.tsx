@@ -1,11 +1,11 @@
 "use client"
 
 import { AtSign, ImageIcon, Link2, Users } from "lucide-react"
-import { Button } from "/components/ui/button"
-import { Header } from "/components/layout/header"
-import { Sidebar } from "/components/layout/sidebar"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "/components/ui/tabs"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "/components/ui/select"
+import { Button } from "../../components/ui/button"
+import { Header } from "../../components/header"
+import { Sidebar } from "../../components/sidebar"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select"
 
 export default function NewPostPage() {
   return (

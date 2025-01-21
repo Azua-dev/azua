@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Button } from "/components/ui/button"
-import { Card } from "/components/ui/card"
+import { Button } from "../../components/ui/button"
+import { Card } from "../../components/ui/card"
 import { Search } from "lucide-react"
 
 export default function DocsPage() {
@@ -8,7 +8,7 @@ export default function DocsPage() {
     <div className="min-h-screen bg-black text-white">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">x.dev</span>
+          <span className="text-2xl font-bold">Azua.dev</span>
         </Link>
         <Button asChild variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-500/10">
           <Link href="/auth">Join the top 1% devs free forever</Link>
@@ -97,11 +97,10 @@ export default function DocsPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/docs/guides/networking-tips" className="textli>
                 <Link href="/docs/guides/networking-tips" className="text-purple-400 hover:underline">
                   Networking Tips
                 </Link>
-              </li>
+              </ul>
               <li>
                 <Link href="/docs/guides/code-collaboration" className="text-purple-400 hover:underline">
                   Effective Code Collaboration
@@ -109,6 +108,7 @@ export default function DocsPage() {
               </li>
             </ul>
           </Card>
+          
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-2xl font-semibold mb-4">Tutorials</h2>
             <ul className="space-y-2">
