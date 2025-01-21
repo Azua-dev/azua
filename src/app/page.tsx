@@ -21,13 +21,14 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto px-4 py-12 space-y-20">
-        <section className="text-center space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Where elite developers
-            <div className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-              shape the future
-            </div>
-          </h1>
+  <section className="text-center space-y-6">
+    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
+      Where elite developers
+      <br />
+      <span className="text-purple-500">
+        shape the future
+      </span>
+    </h1>
           <p className="max-w-2xl mx-auto text-gray-400 text-lg">
             Join the exclusive network for the top 1% of developers who code with passion and purpose. Elevate your
             craft, share your expertise, and build the next generation of technology.
