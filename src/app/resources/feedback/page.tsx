@@ -100,9 +100,9 @@ export default function FeedbackPage() {
                     </svg>
                   </div>
                   <div>
-                    <h2 className="text-xl font-semibold text-white">Report a post on x.dev</h2>
+                    <h2 className="text-xl font-semibold text-white">Report a post on Azua.dev</h2>
                     <p className="text-zinc-400">
-                      If you see a post on x.dev that violates our community guidelines, please report it here.
+                      If you see a post on Azua.dev that violates our community guidelines, please report it here.
                     </p>
                     <form onSubmit={handleReportPostSubmit}>
                       <div className="mb-4">
