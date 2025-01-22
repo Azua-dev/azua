@@ -44,7 +44,7 @@ import {
 import Link from "next/link"
 import { Button } from "../components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../components/ui/collapsible"
-import { cn } from "../lib/utils"
+import { cn } from "../../src/lib/utils"
 
 interface NavItemProps {
   href: string
@@ -59,7 +59,7 @@ function NavItem({ href, icon, children, isActive }: NavItemProps) {
       href={href}
       className={cn(
         "flex items-center gap-2 px-3 py-2 text-sm rounded-md transition-colors",
-        isActive ? "text-zinc-200 bg-zinc-800/50" : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50",
+        isActive ? "text-primary bg-secondary" : "text-muted-foreground hover:text-primary hover:bg-secondary",
       )}
     >
       {icon}
@@ -79,13 +79,18 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 export function Sidebar() {
   return (
-    <aside className="w-60 border-r border-zinc-800 h-[calc(100vh-3.5rem)] sticky top-14 overflow-y-auto">
+    <aside className="w-60 border-r border-border bg-background h-[calc(100vh-3.5rem)] sticky top-14 overflow-y-auto">
       <div className="flex flex-col h-full py-2">
         <div className="px-4 mb-2">
-          <Button className="w-full justify-start gap-2" variant="outline">
-            <Plus className="h-4 w-4" />
-            New post
-          </Button>
+        <Button
+className="w-full justify-start gap-2 bg-secondary border-border text-white hover:bg-border"
+variant="outline"
+onClick={() => window.location.href = '/NewPost'}
+> 
+<Plus className="h-4 w-4" />
+New post
+</Button>
+
         </div>
 
         <div className="px-2 space-y-1">
@@ -100,6 +105,9 @@ export function Sidebar() {
           </NavItem>
           <NavItem href="/history" icon={<History className="h-4 w-4" />}>
             History
+          </NavItem>
+          <NavItem href="/leaderboard" icon={<Trophy className="h-4 w-4" />}>
+            Leaderboard
           </NavItem>
         </div>
 

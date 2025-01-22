@@ -12,14 +12,14 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "../components/ui/alert-dialog"
+} from "../../src/components/ui/alert-dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../components/ui/dropdown-menu"
+} from "../../src/components/ui/dropdown-menu"
 import { useState } from "react"
 
 export function ProfileDropdown() {
@@ -38,9 +38,9 @@ export function ProfileDropdown() {
             <Image src="/placeholder.svg" alt="Profile" width={32} height={32} className="h-full w-full object-cover" />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="w-56 bg-zinc-900/95 border-zinc-800">
-          <div className="flex items-center gap-3 p-3 border-b border-zinc-800">
-            <div className="h-12 w-12 rounded-full overflow-hidden bg-zinc-800">
+        <DropdownMenuContent align="end" className="w-56 bg-background border-border">
+          <div className="flex items-center gap-3 p-3 border-b border-border">
+            <div className="h-12 w-12 rounded-full overflow-hidden bg-border">
               <Image
                 src="/placeholder.svg"
                 alt="Profile"
@@ -51,53 +51,47 @@ export function ProfileDropdown() {
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1">
-                <span className="text-sm font-medium text-white">Terfa John</span>
-                <Star className="h-3 w-3 text-purple-400 fill-purple-400" />
-                <span className="text-xs text-purple-400">10</span>
+                <span className="text-sm font-medium text-foreground">Terfa John</span>
+                <Star className="h-3 w-3 text-primary fill-primary" />
+                <span className="text-xs text-primary">10</span>
               </div>
-              <span className="text-xs text-zinc-400">@k3t3r • Joined June 2024</span>
+              <span className="text-xs text-muted-foreground">@k3t3r • Joined June 2024</span>
             </div>
           </div>
           <div className="py-1">
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">
+            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-foreground focus:bg-secondary focus:text-white">
               <Link href="/profile">
                 <User className="mr-2 h-4 w-4" />
                 Profile
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-purple-400 focus:bg-zinc-800">
+            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-primary focus:bg-secondary">
               <Link href="/plus">
                 <Star className="mr-2 h-4 w-4" />
-                Upgrade to pro
+                Upgrade to plus
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">
+            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-foreground focus:bg-secondary focus:text-white">
               <Link href="/settings">
                 <Settings className="mr-2 h-4 w-4" />
                 Account details
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">
-              <Link href="/reputation">
-                <FileText className="mr-2 h-4 w-4" />
-                Reputation
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">
+            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-foreground focus:bg-secondary focus:text-white">
               <Link href="/devcard">
                 <FileText className="mr-2 h-4 w-4" />
                 Devcard
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white">
+            <DropdownMenuItem asChild className="px-3 py-2 text-sm text-foreground focus:bg-secondary focus:text-white">
               <Link href="/invite">
                 <Users className="mr-2 h-4 w-4" />
                 Invite friends
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuSeparator className="my-1 bg-zinc-800" />
+            <DropdownMenuSeparator className="my-1 bg-border" />
             <DropdownMenuItem
-              className="px-3 py-2 text-sm text-zinc-100 focus:bg-zinc-800 focus:text-white"
+              className="px-3 py-2 text-sm text-foreground focus:bg-secondary focus:text-white"
               onSelect={() => setShowLogoutDialog(true)}
             >
               <LogOut className="mr-2 h-4 w-4" />
@@ -108,14 +102,14 @@ export function ProfileDropdown() {
       </DropdownMenu>
 
       <AlertDialog open={showLogoutDialog} onOpenChange={setShowLogoutDialog}>
-        <AlertDialogContent className="bg-zinc-900 border-zinc-800">
+        <AlertDialogContent className="bg-background border-border">
           <AlertDialogHeader>
             <AlertDialogTitle>Are you sure you want to logout?</AlertDialogTitle>
             <AlertDialogDescription>You will need to login again to access your account.</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel className="bg-zinc-800 hover:bg-zinc-700">Cancel</AlertDialogCancel>
-            <AlertDialogAction className="bg-purple-500 hover:bg-purple-600" onClick={handleLogout}>
+            <AlertDialogCancel className="bg-border hover:bg-secondary">Cancel</AlertDialogCancel>
+            <AlertDialogAction className="bg-primary hover:bg-secondary" onClick={handleLogout}>
               Logout
             </AlertDialogAction>
           </AlertDialogFooter>
